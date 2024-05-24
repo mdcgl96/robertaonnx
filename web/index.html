@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RoBERTa Sentiment Analysis Prediction</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="script.js" async></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <h1>RoBERTa Sentiment Analysis Prediction</h1>
+        <p>ONNX Model Demonstration by mosa (Version 1.1)</p>
+
+        <div class="form-group">
+            <label for="textInput">Bitte Text eingeben und Enter drücken</label>
+            <input type="text" class="form-control" id="textInput" onkeyup="getSentiment(event, this.value);">
+        </div>
+
+        <div id="answerPart" style="visibility: hidden;">
+            <p><b>Answer:</b>
+            <div id="answer"></div>
+            </p>
+        </div>
+
+        <div>
+            <p>Links:<br>
+                <a href="https://github.com/onnx/models/tree/main/text/machine_comprehension/roberta">Roberta
+                    Repository</a><br>
+                <a href="https://onnx.ai/">ONNX Website</a>
+            </p>
+        </diV>
+    </div>
+
+
+</body>
+
+</html>
